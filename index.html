@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Invitation de Mariage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- En-tête mariage -->
+    <header style="text-align:center; margin-bottom: 30px;">
+        <h2 style="color: #a0522d; font-family: 'Georgia', serif;">
+            Messie Tamfutu & Christine
+        </h2>
+        <p style="font-size: 18px; color: #7a4a2f;">
+            Mariage le 15 décembre 2026 à Kinshasa, DRC
+        </p>
+    </header>
+
+
+
+    <h1>Formulaire d'Invitation de Mariage</h1>
+    <form id="invitationForm">
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+        
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+        
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="telephone">Numéro de téléphone :</label><br>
+        <input type="tel" id="telephone" name="telephone" required pattern="[0-9]{9,15}" placeholder="Entrez votre numéro"><br><br>
+        
+        <label for="relation">Votre relation avec le couple :</label><br>
+        <select id="relation" name="relation" required>
+            <option value="">--Choisissez une option--</option>
+            <option value="ami">Ami</option>
+            <option value="connaissance">Connaissance</option>
+            <option value="famille">Membre de la Famille</option>
+            <option value="autre">Autre</option>
+        </select><br><br>
+        
+        <button type="submit">Obtenir mon invitation</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
+
+     <script src="script.js"></script>
+</body>
+</html>
